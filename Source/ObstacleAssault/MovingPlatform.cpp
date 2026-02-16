@@ -16,11 +16,11 @@ void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 
-	UE_LOG(LogTemp, Display, TEXT("MovingPlatform BeginPlay 1"));
+	UE_LOG(LogTemp, Display, TEXT("MovingPlatform BeginPlay First"));
 
-	UE_LOG(LogTemp, Display, TEXT("MovingPlatform BeginPlay 2"));
+	UE_LOG(LogTemp, Display, TEXT("MovingPlatform BeginPlay Second"));
 
-	UE_LOG(LogTemp, Display, TEXT("MovingPlatform BeginPlay 3"));
+	UE_LOG(LogTemp, Display, TEXT("MovingPlatform BeginPlay Third"));
 
 
 }
