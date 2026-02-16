@@ -25,7 +25,10 @@ void AMovingPlatform::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	// Increase X position by 1 every frame
-	MyVector.X = MyVector.X + 1;
-	SetActorLocation(MyVector);
+	FVector CurrentLocation = GetActorLocation();
+
+	CurrentLocation.X = CurrentLocation.X + 1;
+
+	SetActorLocation(CurrentLocation);
 }
 
