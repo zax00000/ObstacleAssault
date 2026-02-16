@@ -16,14 +16,14 @@ void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 
-	float MyCalculation = 8.0f + (2.5f - 1.0f) * 10.0f;
-	UE_LOG(LogTemp, Display, TEXT("My calculation is %f"), MyCalculation);
+	UE_LOG(LogTemp, Display, TEXT("MemberFloat: %f"), MemberFloat);
 }
 
 // Called every frame
 void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
 
 }
 
