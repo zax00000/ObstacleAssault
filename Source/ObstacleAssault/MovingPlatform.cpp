@@ -16,15 +16,15 @@ void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 
-	int NumberOfApples = 10;
-	int NumberOfOranges = 7;
-	UE_LOG(LogTemp, Display, TEXT("NumberOfApples: %d %d"), NumberOfApples, NumberOfOranges);
+	int MyValue = -5;
+	int MyOtherValue = -8;
 
-	float MyHeight = 182.5f;
-	UE_LOG(LogTemp, Display, TEXT("My Height is %f"), MyHeight);
+	int Result = MyValue * MyOtherValue;
 
-	FString MyName = "Mateusz Œwiderski";
-	UE_LOG(LogTemp, Display, TEXT("My name is %s"), *MyName);
+	UE_LOG(LogTemp, Display, TEXT("Result is %d"), Result);
+
+	float MyCalculation = 12.0f / 5.0f;
+	UE_LOG(LogTemp, Display, TEXT("My calculation is %f"), MyCalculation);
 }
 
 // Called every frame
