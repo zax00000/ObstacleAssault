@@ -28,4 +28,7 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 	int MemberInt = 5;
+
+	UPROPERTY(EditAnywhere)
+	FVector MyVector = FVector(11.2f, 3.4f, 7.6f);
 };
