@@ -32,6 +32,12 @@ void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	MovePlatform(DeltaTime);
+	RotatePlatform(DeltaTime);
+}
+
+void AMovingPlatform::MovePlatform(float DeltaTime)
+{
 	// Increase X position by 1 every frame
 	FVector CurrentLocation = GetActorLocation();
 
@@ -40,3 +46,7 @@ void AMovingPlatform::Tick(float DeltaTime)
 	SetActorLocation(CurrentLocation);
 }
 
+void AMovingPlatform::RotatePlatform(float DeltaTime)
+{
+	// Rotate the platform
+}
